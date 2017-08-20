@@ -23,7 +23,7 @@ Feature: Feature - Login with valid credentials
   Scenario: Valid Login
     Given user opens chrome browser
     And navigate to application url
-    When user provide valid user name
-    And user provide valid "souni"
+    When user provide valid user name as "7003381255"
+    And user provide valid password as "janina@123"
     And click on login buttoon
     Then user should successfully login to application

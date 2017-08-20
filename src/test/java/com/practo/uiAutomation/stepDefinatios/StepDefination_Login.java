@@ -16,15 +16,16 @@ public class StepDefination_Login {
 	    System.out.println("go to url");
 	}
 
-	@When("^user provide valid user name$")
-	public void user_provide_valid_user_name() throws Throwable {
-	  System.out.println("uname");
-	}
-
-	@When("^user provide valid \"([^\"]*)\"$")
-	public void user_provide_valid(String arg1) throws Throwable {
+	@When("^user provide valid user name as \"([^\"]*)\"$")
+	public void user_provide_valid_user_name_as(String arg1) throws Throwable {
 	    System.out.println(arg1);
 	}
+
+	@When("^user provide valid password as \"([^\"]*)\"$")
+	public void user_provide_valid_password_as(String arg1) throws Throwable {
+		System.out.println(arg1);
+	}
+
 
 
 
